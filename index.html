@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Estilo da paginacao */
+.paginacao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.paginacao a {
+  color: #fff;
+  background-color: rgba(128, 0, 128, 0.7);
+  padding: 10px 15px;
+  margin: 0 5px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Estilo das setas */
+.prev:before,
+.next:before {
+  content: '';
+  display: inline-block;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #fff;
+  margin-right: 10px;
+}
+
+.next:before {
+  border-right: none;
+  border-left: 10px solid #fff;
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+/* Estilo da pagina ativa */
+.paginacao a.active {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Estilo dos links desabilitados */
+.paginacao a.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+.paginacao a:hover {
+  background-color: rgba(128, 0, 128, 0.9);
+}
+    </style>
+</head>
+<body>
+    <div class="paginacao">
+        <a href="#" class="prev"> Anterior </a>
+        <a href="#" class="page">1</a>
+        <a href="#" class="page">2</a>
+        <a href="#" class="page">3</a>
+        <a href="#" class="page">4</a>
+        <a href="#" class="page">5</a>
+        <a href="#" class="next"> Proximo </a>
+    </div>
+</body>
+</html>
